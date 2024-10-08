@@ -1,0 +1,19 @@
+######### NORMAL OPERATION  ###########
+
+### Read all films
+GET http://localhost:3000/films
+
+### Read one film identified by 2
+GET http://localhost:3000/films/
+
+### Read films where duration minimum is 100
+GET http://localhost:3000/films/?duration-min=100
+
+### Create one film
+POST http://localhost:3000/films/
+Content-Type: application/json
+{
+    "title":"LocalGhost",
+    "director":"Mike Pourbaix",
+    "duration":127
+}
